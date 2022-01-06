@@ -9,7 +9,7 @@ int main()
     int a;
     int b;
     int c;
-    int kr = 5000; //credits
+    int kr = 7000; //credits
 
     cout << "\n\n\t You have 5000 credits. The game starts now!";
     Sleep(2005);
