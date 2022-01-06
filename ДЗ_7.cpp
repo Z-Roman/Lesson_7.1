@@ -22,7 +22,7 @@ int main()
 
         kr -= 25;
 
-        a = (time(0) / 7 + kr * 5) % 8;
+        a = (time(0) / 7 + kr * 5+1-1) % 8;
         cout << a;
         Sleep(500);
 
