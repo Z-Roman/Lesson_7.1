@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include <windows.h>
 using namespace std;
@@ -11,16 +9,16 @@ int main()
     int a;
     int b;
     int c;
-    int kr = 5000; //кредиты
+    int kr = 5000; //credits
 
-    cout << "\n\t У вас есть 5000 кредитов. Игра начинается прямо сейчас!";
-    Sleep(2000);
+    cout << "\n\t You have 5000 credits. The game starts now!";
+    Sleep(2005);
     system("cls");
 
     do
     {
 
-        cout << "\n\tНа счету " << kr << " кредитов\n\n\t";
+        cout << "\n\ton the account " << kr << " credits\n\n\t";
 
         kr -= 25;
 
@@ -41,77 +39,77 @@ int main()
         if (a == 6 && b == 6 && c == 6)
         {
             kr /= 2;
-            cout << "\n\t 666 уменьшают ваш банк в 2 раза! ";
+            cout << "\n\t 666 reduce your bank by 2 times! ";
             Sleep(2000);
         }
 
         else if (a == 0 && b == 0 && c == 0)
         {
             kr += 300;
-            cout << "\n\t000 У вас +300";
+            cout << "\n\t000 you have +300";
             Sleep(2000);
         }
 
         else if (a == 1 && b == 1 && c == 1)  
         {
             kr += 300;
-            cout << "\n\t111 У вас +300";
+            cout << "\n\t111 you have +300";
             Sleep(2000);
         }
 
         else if (a == 2 && b == 2 && c == 2)
         {
             kr += 300;
-            cout << "\n\t222 У вас +300";
+            cout << "\n\t222 you have +300";
             Sleep(2000);
         }
 
         else if (a == 3 && b == 3 && c == 3)
         {
             kr += 300;
-            cout << "\n\t333 У вас +300";
+            cout << "\n\t333 you have +300";
             Sleep(2000);
         }
 
         else if (a == 4 && b == 4 && c == 4)
         {
             kr += 300;
-            cout << "\n\t444 У вас +300";
+            cout << "\n\t444 you have +300";
             Sleep(2000);
         }
 
         else if (a == 5 && b == 5 && c == 5)
         {
             kr += 3000;
-            cout << "\n\t555 У вас +3000";
+            cout << "\n\t555 you have +3000";
             Sleep(2000);
         }
 
         else if (a == 5 && b == c && b != 5)
         {
             kr += 100;
-            cout << "\n\t5XX У вас +100";
+            cout << "\n\t5XX you have +100";
             Sleep(2000);
         }
 
         else if (a == 5 && b == 5 && c != 5)
         {
             kr += 150;
-            cout << "\n\t55X У вас +150";
+            cout << "\n\t55X you have +150";
             Sleep(2000);
         }
 
         else if (a == 7 && b == c && b != 7)
         {
             kr += 100;
-            cout << "\n\t7XX У вас +100";
+            cout << "\n\t7XX you have +100";
             Sleep(2000);
         }
 
         else if (a == 7 && b == 7 && c != 7)
         {
             kr += 150;
-            cout << "\n\t77X У вас +150";
+            cout << "\n\t77X you have +150";
             Sleep(2000);
         }
 
@@ -123,6 +121,6 @@ int main()
       
     } while (kr >= 25);
 
-    cout << (kr < 25 ? "\n\t У вас недостаточно кредитов для следующего хода. Вы проиграли!!!\n" : 
-        "\n\t 777 Вам выпал джек-пот!!! Ваш приз 100000 !!!\n");
+    cout << (kr < 25 ? "\n\t you have not enough credits for the next turn. You lost!!!\n" : 
+        "\n\t 777 You got the jackpot !!! Your prize is 100000!!!\n");
 }
